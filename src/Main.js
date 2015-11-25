@@ -1,4 +1,4 @@
-require(['src/AppController', 'src/MyController'], function (appController) {
+require(['src/AppController', 'src/controller/MyController'], function (appController) {
     Main(appController);
 });
 
