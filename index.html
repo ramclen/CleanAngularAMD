@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script data-main="src/configuration.js" src="bower_components/requirejs/require.js"></script>
+</head>
+<body>
+<div ng-controller="HomeCtrl">
+    <p>Reload this page with open console, enter text and hit the log button...</p>
+    <label>Message: <input type="text" ng-model="message" /></label>
+    <button ng-click="$log.log(message)">log</button>
+    <button ng-click="$log.warn(message)">warn</button>
+    <button ng-click="$log.info(message)">info</button>
+    <button ng-click="$log.error(message)">error</button>
+    <button ng-click="$log.debug(message)">debug</button>
+</div>
+</body>
+</html>
